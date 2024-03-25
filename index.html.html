@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="juego, adivina, adivinar, banderas, bandera, jugar, paises">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="juegoBanderas2.css">
+    <link rel="shortcut icon"
+        href="https://play-lh.googleusercontent.com/T6AltkxCcNltgjv-Ic_T3_Do_qyt2LCVoGXcKVyJsDjkE3gYWgMErEYnd-PNEqeD37c">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="juegoBanderas2.js"></script>
+
+    <title>Juego Banderas 2</title>
+</head>
+
+<body>
+
+    <div class="contenedorMarcador">
+        <p class="marcador"> Marcador: </p>
+    </div>
+
+
+    <div class="contenedorPregunta1">
+        <h1>Adiviná la Bandera! 2</h1>
+        <h3>Pregunta 1: De qué país es esta bandera?</h3>
+        <div class="contenedorImagen1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/1280px-Flag_of_Panama.svg.png" alt="">
+        </div>
+
+        <div class="itemsP1">
+
+            <div class="botonInput">
+            <label for="">Cuba</label>
+            <input type="radio" name="p1" value="Cuba">
+            </div>
+
+            <div class="botonInput">
+            <label for="">Costa Rica</label>
+            <input type="radio" name="p1" value="Costa-Rica">
+            </div>
+
+            <div class="botonInput">
+            <label for="">Panamá</label>
+            <input type="radio" name="p1" value="Panama">
+            </div>
+
+
+            <input type="submit" class="boton 1" onclick="enviarRespuesta1()">
+
+
+
+        </div>
+        <div class="contenedorRespuestas1">
+            <div class="respuestaCorrecta1">Respuesta Correcta!</div>
+            <div class="respuestaIncorrecta1">Respuesta Incorrecta. Es Panamá</div>
+        </div>
+
+
+        <div class="contenedorPregunta2">
+            <h3>Pregunta 2: De qué país es esta bandera?</h3>
+            <div class="contenedorImagen2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/2560px-Flag_of_Morocco.svg.png"
+                    alt="">
+            </div>
+
+            <div class="itemsP2">
+
+                <div class="botonInput">
+                <label for="">Túnez</label>
+                <input type="radio" name="p2" value="Tunez">
+                </div>
+
+                <div class="botonInput">
+                <label for="">Marruecos</label>
+                <input type="radio" name="p2" value="Marruecos">
+                </div>
+
+                <div class="botonInput">
+                <label for="">Turquía</label>
+                <input type="radio" name="p2" value="Turquia">
+                </div>
+
+                <input type="submit" class="boton 2" onclick="enviarRespuesta2()">
+
+            </div>
+
+            <div class="contenedorRespuestas2">
+                <div class="respuestaCorrecta2">Respuesta Correcta!</div>
+                <div class="respuestaIncorrecta2">Respuesta Incorrecta. Es Marruecos</div>
+            </div>
+
+
+
+            <div class="contenedorPregunta3">
+                <h3>Pregunta 3: De qué país es esta bandera?</h3>
+                <div class="contenedorImagen3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/1200px-Flag_of_Hong_Kong.svg.png"
+                        alt="">
+                </div>
+
+                <div class="itemsP3">
+
+                    <div class="botonInput">
+                    <label for="">Corea del Sur</label>
+                    <input type="radio" name="p3" value="Corea-Del-Sur">
+                    </div>
+
+                    <div class="botonInput">
+                    <label for="">Hong Kong</label>
+                    <input type="radio" name="p3" value="Hong-Kong">
+                    </div>
+
+
+                    <div class="botonInput">
+                    <label for="">Corea del Norte</label>
+                    <input type="radio" name="p3" value="Corea-Del-Norte">
+                    </div>
+
+
+                    <input type="submit" class="boton 3" onclick="enviarRespuesta3()">
+
+                </div>
+
+                <div class="contenedorRespuestas3">
+                    <div class="respuestaCorrecta3">Respuesta Correcta!</div>
+                    <div class="respuestaIncorrecta3">Respuesta Incorrecta. Es Hong Kong</div>
+                </div>
+
+
+
+
+                <div class="contenedorPregunta4">
+                    <h3>Pregunta 4: De qué país es esta bandera?</h3>
+                    <div class="contenedorImagen4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_Armenia_%283-2%29.svg/1280px-Flag_of_Armenia_%283-2%29.svg.png"
+                            alt="">
+                    </div>
+
+                    <div class="itemsP4">
+
+                        <div class="botonInput">
+                        <label for="">Armenia</label>
+                        <input type="radio" name="p4" value="Armenia">
+                        </div>
+
+
+                        <div class="botonInput">
+                        <label for="">Macedonia</label>
+                        <input type="radio" name="p4" value="Macedonia">
+                        </div>
+
+
+                        <div class="botonInput">
+                        <label for="">Montenegro</label>
+                        <input type="radio" name="p4" value="Montenegro">
+                        </div>
+
+
+                        <input type="submit" class="boton 4" onclick="enviarRespuesta4()">
+
+                    </div>
+
+                    <div class="contenedorRespuestas4">
+                        <div class="respuestaCorrecta4">Respuesta Correcta!</div>
+                        <div class="respuestaIncorrecta4">Respuesta Incorrecta. Es Armenia </div>
+                    </div>
+
+
+
+                    <div class="contenedorPregunta5">
+                        <h3>Pregunta 5: De qué país es esta bandera?</h3>
+                        <div class="contenedorImagen5">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg"
+                                alt="">
+                        </div>
+
+                        <div class="itemsP5">
+
+                            <div class="botonInput">
+                            <label for="">Filipinas</label>
+                            <input type="radio" name="p5" value="Filipinas">
+                            </div>
+
+
+                            <div class="botonInput">
+                            <label for="">Nueva Zelanda</label>
+                            <input type="radio" name="p5" value="Nueva-Zelanda">
+                            </div>
+
+
+                            <div class="botonInput">
+                            <label for="">Australia</label>
+                            <input type="radio" name="p5" value="Australia">
+                            </div>
+
+
+                            <input type="submit" class="boton 5" onclick="enviarRespuesta5()">
+
+                        </div>
+
+                        <div class="contenedorRespuestas5">
+                            <div class="respuestaCorrecta5">Respuesta Correcta!</div>
+                            <div class="respuestaIncorrecta5">Respuesta Incorrecta. Es Nueva Zelanda</div>
+                        </div>
+
+
+
+                        <div class="contenedorPregunta6">
+                            <h3>Pregunta 6: De qué país es esta bandera?</h3>
+                            <div class="contenedorImagen6">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Wales.svg/1200px-Flag_of_Wales.svg.png"
+                                    alt="">
+                            </div>
+
+                            <div class="itemsP6">
+
+                                <div class="botonInput">
+                                <label for="">Gales</label>
+                                <input type="radio" name="p6" value="Gales">
+                                </div>
+
+
+                                <div class="botonInput">
+                                <label for="">Escocia</label>
+                                <input type="radio" name="p6" value="Escocia">
+                                </div>
+
+
+                                <div class="botonInput">
+                                <label for="">Irlanda</label>
+                                <input type="radio" name="p6" value="Irlanda">
+                                </div>
+
+
+                                <input type="submit" class="boton 6" onclick="enviarRespuesta6()">
+
+                            </div>
+
+                            <div class="contenedorRespuestas6">
+                                <div class="respuestaCorrecta6">Respuesta Correcta!</div>
+                                <div class="respuestaIncorrecta6">Respuesta Incorrecta. Es Gales</div>
+                            </div>
+
+
+
+                            <div class="contenedorPregunta7">
+                                <h3>Pregunta 7: De qué país es esta bandera?</h3>
+                                <div class="contenedorImagen7">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/2560px-Flag_of_Bosnia_and_Herzegovina.svg.png"
+                                        alt="">
+                                </div>
+
+                                <div class="itemsP7">
+
+                                    <div class="botonInput">
+                                    <label for="">Chipre</label>
+                                    <input type="radio" name="p7" value="Chipre">
+                                    </div>
+
+
+                                    <div class="botonInput">
+                                    <label for="">Albania</label>
+                                    <input type="radio" name="p7" value="Albania">
+                                    </div>
+
+
+                                    <div class="botonInput">
+                                    <label for="">Bosnia</label>
+                                    <input type="radio" name="p7" value="Bosnia">
+                                    </div>
+
+
+                                    <input type="submit" class="boton 7" onclick="enviarRespuesta7()">
+
+                                </div>
+
+                                <div class="contenedorRespuestas7">
+                                    <div class="respuestaCorrecta7">Respuesta Correcta!</div>
+                                    <div class="respuestaIncorrecta7">Respuesta Incorrecta. Es Bosnia</div>
+                                </div>
+
+
+
+                                <div class="contenedorPregunta8">
+                                    <h3>Pregunta 8: De qué país es esta bandera?</h3>
+                                    <div class="contenedorImagen8">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/2560px-Flag_of_Romania.svg.png"
+                                            alt="">
+                                    </div>
+
+                                    <div class="itemsP8">
+
+                                        <div class="botonInput">
+                                        <label for="">Rumania</label>
+                                        <input type="radio" name="p8" value="Rumania">
+                                        </div>
+
+
+                                        <div class="botonInput">
+                                        <label for="">Moldavia</label>
+                                        <input type="radio" name="p8" value="Moldavia">
+                                        </div>
+
+
+                                        <div class="botonInput">
+                                        <label for="">Andorra</label>
+                                        <input type="radio" name="p8" value="Andorra">
+                                        </div>
+
+
+
+                                        <input type="submit" class="boton 8" onclick="enviarRespuesta8()">
+
+                                    </div>
+
+                                    <div class="contenedorRespuestas8">
+                                        <div class="respuestaCorrecta8">Respuesta Correcta!</div>
+                                        <div class="respuestaIncorrecta8">Respuesta Incorrecta. Es Rumania</div>
+                                    </div>
+
+
+
+                                    <div class="contenedorPregunta9">
+                                        <h3>Pregunta 9: De qué país es esta bandera?</h3>
+                                        <div class="contenedorImagen9">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/2560px-Flag_of_Pakistan.svg.png"
+                                                alt="">
+                                        </div>
+
+                                        <div class="itemsP9">
+
+                                            <div class="botonInput">
+                                            <label for="">Malasia</label>
+                                            <input type="radio" name="p9" value="Malasia">
+                                            </div>
+
+
+                                            <div class="botonInput">
+                                            <label for="">Bangladesh</label>
+                                            <input type="radio" name="p9" value="Bangladesh">
+                                            </div>
+
+
+                                            <div class="botonInput">
+                                            <label for="">Pakistán</label>
+                                            <input type="radio" name="p9" value="Pakistan">
+                                            </div>
+
+
+                                            <input type="submit" class="boton 9" onclick="enviarRespuesta9()">
+
+                                        </div>
+
+                                        <div class="contenedorRespuestas9">
+                                            <div class="respuestaCorrecta9">Respuesta Correcta!</div>
+                                            <div class="respuestaIncorrecta9">Respuesta Incorrecta. Es Pakistán</div>
+                                        </div>
+
+
+
+                                        <div class="contenedorPregunta10">
+                                            <h3>Pregunta 10: De qué país es esta bandera?</h3>
+                                            <div class="contenedorImagen10">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Flag_of_Yugoslavia_%281946-1992%29.svg/640px-Flag_of_Yugoslavia_%281946-1992%29.svg.png"
+                                                    alt="">
+                                            </div>
+
+                                            <div class="itemsP10">
+
+                                                <div class="botonInput">
+                                                <label for="">Vietnam</label>
+                                                <input type="radio" name="p10" value="Vietnam">
+                                                </div>
+
+
+                                                <div class="botonInput">
+                                                <label for="">URSS</label>
+                                                <input type="radio" name="p10" value="URSS">
+                                                </div>
+
+
+                                                <div class="botonInput">
+                                                <label for="">Yugoslavia</label>
+                                                <input type="radio" name="p10" value="Yugoslavia">
+                                                </div>
+
+
+                                                <input type="submit" class="boton enviarFinal 10"
+                                                    onclick="enviarRespuesta10()">
+
+                                            </div>
+
+                                            <div class="contenedorRespuestas10">
+                                                <div class="respuestaCorrecta10">Respuesta Correcta!</div>
+                                                <div class="respuestaIncorrecta10">Respuesta Incorrecta. Es Yugoslavia</div>
+                                            </div>
+
+
+
+                                            <p class="mostrarMensajeFinal"></p> <br>
+                                            <p class="respuestas"></p>
+
+
+                                            <a href="juegoBanderas.html" target="_blank">Jugar a Avidiná la Bandera 1</a>
+
+
+</body>
+
+</html>
